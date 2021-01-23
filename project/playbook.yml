@@ -1,0 +1,27 @@
+- 
+        name: "Install xcode,brew,python,java,ruby,cocoapods"
+        hosts: testuser_b2c  
+        tasks:
+            -
+                command: "ruby -e \"$(curl -fsSLhttps://raw.githubusercontent.com/Homebrew/install/master/install)\""     
+                name: "install brew"
+
+            -      
+                command: "brew install python3.9" 
+                name: "install python"
+     
+            -  
+                command: "brew install ruby" 
+                name: "install ruby"   
+
+            -  
+                command: "brew install cocoapods" 
+                name: "Install Cocoapods"
+      
+            -  
+                command: "brew install java" 
+                name: "install Java"   
+
+            -  
+                command: "brew install ansible"     
+                name: "install Ansible"
